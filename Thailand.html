@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rakshith Travel Blog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  color: white;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+table {
+  float: left;
+  width: 30%;
+  background: #ccc;
+  padding: 20px;
+  height: 400px;
+}
+
+nav {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* styles specifies the padding and margins of the unordered list in nav */
+nav ul {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* styles for the li in nav */
+nav li {
+  background-color: #009933;
+  border-radius: 2em;
+  margin: 0.3em;
+  padding: 0.4em;
+  list-style-type: none;
+}
+
+nav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  table, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#floated{
+    float: left;
+}
+
+@media only screen and (min-width: 999px){
+ nav li {
+    border-radius: 4;
+    border-top: solid #000000;
+    border-bottom: solid #000000;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5px;
+    width: 20%;
+    display: inline-block;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header">
+    <span style="text-align:left; font-size: 35px;">Travel Blog</span> 
+       <span>Lets travel the world</span>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="workexperience.html">Work Experience</a></li>
+    </ul>
+  </nav>
+
+<section>
+
+   
+    <table>
+        <a href="index.html">Click here to go Back!</a>
+        <tbody>
+<tr>
+          <th>Places I visited in Thailand</th>
+        </tr>
+        <tr>
+          <td><img src="./images/bangkok.jpg" style="width: 30%;"><div class="links"><a href="bangkok.html">Bangkok</a></div></td>
+        </tr>
+
+        <tr>
+            <td><img src="./images/phuket.jpg" style="width: 30%;"><div class="links"><a href="phuket.html">Phuket</a></div></td>
+        </tr>
+        </tbody>
+        
+       
+      </table>
+
+  
+  <article>
+    <h1 style="text-align: center;">Thailand</h1>
+
+    <div>
+        <div id="floated"><img src="./images/thailand.jpg"  height="200" width="195"></div>
+        <p>Thailand,[a] officially the Kingdom of Thailand and formerly known as Siam,[b] is a country in Southeast Asia. Located at the centre of the Indochinese Peninsula, it is composed of 76 provinces, and covers an area of 513,120 square kilometres (198,120 sq mi), and a population over 69 million people. Thailand is the world's 50th-largest country by land area, and the 22nd-most-populous country in the world. The capital and largest city is Bangkok, a special administrative area. Thailand is bordered to the north by Myanmar and Laos, to the east by Laos and Cambodia, to the south by the Gulf of Thailand and Malaysia, and to the west by the Andaman Sea and the southern extremity of Myanmar. Its maritime boundaries include Vietnam in the Gulf of Thailand to the southeast, and Indonesia and India on the Andaman Sea to the southwest. Nominally, Thailand is a constitutional monarchy and parliamentary democracy; However, in recent history, its government has experienced multiple coups and periods of military dictatorships.</p>
+    </div>
+
+  </article>
+</section>
+
+<footer>
+  <p>© Copyright 2020. All Rights reserved.</p>
+</footer>
+
+</body>
+</html>

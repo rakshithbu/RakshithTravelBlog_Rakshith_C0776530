@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rakshith Travel Blog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  color: white;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+table {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+nav {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* styles specifies the padding and margins of the unordered list in nav */
+nav ul {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* styles for the li in nav */
+nav li {
+  background-color: #009933;
+  border-radius: 2em;
+  margin: 0.3em;
+  padding: 0.4em;
+  list-style-type: none;
+}
+
+nav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  table, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#floated{
+    float: left;
+}
+
+.rollover {
+    display: block;
+    width: 400px;
+    height: 300px;
+    background: url(./images/leh.jpg) no-repeat;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.rollover:hover {
+    background: url(./images/Khadungla_2.jpg)
+}
+
+@media only screen and (min-width: 999px){
+ nav li {
+    border-radius: 4;
+    border-top: solid #000000;
+    border-bottom: solid #000000;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5px;
+    width: 20%;
+    display: inline-block;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <span style="text-align:left; font-size: 35px;">Travel Blog</span> 
+           <span>Lets travel the world</span>
+        </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="workexperience.html">Work Experience</a></li>
+    </ul>
+  </nav>
+
+<section>
+
+  
+  <article>
+    <h1 style="text-align: center;">Khardung La</h1>
+    <a href="leh.html" style="float: left;">Click here to go Back!</a>
+    <div style='display: flex; justify-content: center;'>
+        <a class='rollover' href="#"></a>
+      </div>
+
+      <p>
+        Khardung La is a mountain pass in the Leh district of the Indian union territory of Ladakh. The local pronunciation is "Khardong La" or "Khardzong La" but, as with most names in Ladakh, the romanised spelling varies. The pass on the Ladakh Range is north of Leh and is the gateway to the Shyok and Nubra valleys.
+      </p>
+      <p>
+        The pass on the Ladakh Range is north of Leh and is the gateway to the Shyok and Nubra valleys. The Siachen Glacier lies part way up the latter valley. Built in 1976, it was opened to public motor vehicles in 1988. Maintained by the Border Roads Organisation, the pass is strategically important to India as it is used to carry supplies to the Siachen Glacier.
+
+        The elevation of Khardung La is 5,359 m (17,582 ft).[1] Local summit signs and dozens of stores selling shirts in Leh incorrectly claim that its elevation is in the vicinity of 5,602 m (18,379 ft) and that it is the world's highest motorable pass.
+      </p>
+  </article>
+
+</section>
+
+<footer>
+  <p>© Copyright 2020. All Rights reserved.</p>
+</footer>
+
+</body>
+</html>
